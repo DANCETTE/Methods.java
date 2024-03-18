@@ -1,0 +1,33 @@
+public class MethodsExample {
+
+    // Method to calculate the sum of two numbers
+    public static int calculateSum(int num1, int num2) {
+        return num1 + num2;
+    }
+
+    // Method to find the maximum of three numbers
+    public static int findMax(int num1, int num2, int num3) {
+        int max = num1;
+        if (num2 > max) {
+            max = num2;
+        }
+        if (num3 > max) {
+            max = num3;
+        }
+        return max;
+    }
+
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 20;
+        int c = 30;
+
+        // Calling the calculateSum method
+        int sum = calculateSum(a, b);
+        System.out.println("Sum of " + a + " and " + b + " is: " + sum);
+
+        // Calling the findMax method
+        int max = findMax(a, b, c);
+        System.out.println("Maximum of " + a + ", " + b + ", and " + c + " is: " + max);
+    }
+}
